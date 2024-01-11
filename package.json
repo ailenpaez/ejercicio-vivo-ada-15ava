@@ -1,0 +1,17 @@
+{
+  "name": "ejercicio-vivo",
+  "version": "1.0.0",
+  "description": "Ejercitación POO - ADA Backend 15va\r Consigna:\r A continuación se detallarán los puntos de forma enumerada de como se deberá desarrollar\r el trabajo.\r 1. Inicializar un proyecto en node.\r 2. Instalar las dependencias ts-node y typescript como dependencia de desarrollo.\r 3. Crear el script para ejecutar el archivo que contendrá la lógica.\r 4. Inicializa la configuración de typescript y descomenta las características necesarias que\r vimos a lo largo de las clases.\r 5. Creación del fichero. Tené en cuenta que la raiz del proyecto es la carpeta src.\r 6. Crea las carpetas y archivos pertinentes al modelo MVC (controlador, modelo, base de\r dato).\r 7. En la carpeta database, crear un archivo foods.json con la siguiente estructura. Copia y\r pega el contenido que aparece debajo:\r [\r {\r \"name\": \"Sushi\",\r \"ingredients\": [\"rice\", \"fresh fish\", \"seaweed nori\", \"rice vinegar\", \"sugar\"],\r \"culture\": \"Japanese\"\r },\r {\r \"name\": \"Pizza\",\r \"ingredients\": [\"pizza dough\", \"tomato sauce\", \"cheese\", \"pepperoni\", \"vegetables\"],\r \"culture\": \"Italian\"\r },\r {\r \"name\": \"Taco\",\r \"ingredients\": [\"corn tortilla\", \"grilled beef\", \"onion\", \"cilantro\", \"salsa\"],\r \"culture\": \"Mexican\"\r },\r {\r \"name\": \"Chicken Curry\",\r \"ingredients\": [\"chicken\", \"curry powder\", \"coconut milk\", \"onion\", \"ginger\"],\r \"culture\": \"Indian\"\r },\r {\r \"name\": \"Pasta Carbonara\",\r \"ingredients\": [\"spaghetti\", \"bacon\", \"eggs\", \"parmesan cheese\", \"black pepper\"],\r \"culture\": \"Italian\"\r }\r ]\r 8. En la carpeta Models desarrollarás la lógica. Por eso deberás aquí leer el archivo de\r foods.json. Con fs, o con alguna de las otras formas que ya vimos en clases.\r 9. Crear una clase Food que pida las propiedades correspondiente a cada comida de la\r base de datos, es decir: name, ingredients, culture.\r 10. Crea dentro de esta clase un método que muestre en consola toda la data de cada\r comida en formato string. Atención con esto último, en formato string, no se debe mostrar el\r objeto con la data.\r 11. Crea un método estático que busque en la base de datos una Food mediante la cultura,\r la búsqueda debe ser estricta.\r 12. Crea otra clase a partir de Food, para ello tendrás que utilizar la Herencia. La clase\r nueva se deberá llamar ItalianFood, que además de las propiedades heredadas de Food,\r pedirá la city en donde se originó dicha comida.\r 13. Instanciar un nuevo objeto a partir de Food e instanciar un objeto a partir de ItalianFood.\r 14. Ejecutar el método estático de Food y mostrar en consola el objeto creado a partir de\r ItalianFood.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx ts-node ./src/model/modelFood.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
